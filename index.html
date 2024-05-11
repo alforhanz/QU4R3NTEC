@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,114 @@
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Material Symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <!-- Mis reglas css -->
     <link rel="stylesheet" href="public/css/master.css">
 </head>
-<body>
-    
-    <!--BUSCADOR-->
-    <!-- <div id="buscador" class="contenedor-buscador">
-        <div class="row">
-          <div class="col s11">
-            <div class="row buscador">
-              <div class="s10 col">
-                <input class="uil uil-search-alt" data-role="none" id="articulo" placeholder="Buscar" value=""
-                  autocomplete="off">
-              </div>
-              <div class="s2 col">           
-                <button id="buscado" class="search-action ui-btn" onclick="javascript: Busqueda()">
-                  <i class="material-symbols-outlined">search</i>
-                </button>
-              </div>
-            </div>
-          </div>        
-        </div>
-    </div> -->
-        <!--FIN BUSCADOR-->
-     <!-- HEADER -->
-  <my-header></my-header>
 
-    <!-- aqui estara el contenido de la pagina -->
+<body>
+    <div id="promociones"><label>PROMOCIONES</label></div>
+
+
+    <!-- NAVBAR PRINCIPAL -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Mi Proyecto</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><span
+                    class="material-symbols-outlined">menu</span></a>
+            <div id="buscador">
+                <input class="uil uil-search-alt" data-role="none" id="Buscado-in" placeholder="Buscar" value=""
+                    autocomplete="off">
+                <button id="btn-buscado" class="search-action ui-btn" onclick="javascript: Busqueda()">
+                    <i class="material-symbols-outlined">search</i>
+                </button>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#" id="inicio-link"><i class="material-symbols-outlined">home</i> Inicio</a></li>
+                    <li><a href="#" id="acerca-de-link"><i class="material-symbols-outlined">info</i> Acerca de</a></li>
+                    <li><a href="#" id="contacto-link"><i class="material-symbols-outlined">call</i> Contacto</a></li>
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="dropdown-login">
+                            <i class="material-symbols-outlined">lock</i> Iniciar sesión
+                            <i class="material-symbols-outlined right">arrow_drop_down</i>
+                        </a>
+                        <ul id="dropdown-login" class="dropdown-content">
+                            <li><a href="#" id="login">Ingresar</a></li>
+                            <li><a href="#" id="registro">Registrarse</a></li>
+                            <li><a href="#">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- MENU LATERAL IZQUIERDO -->
+    <!-- Sidenav -->
+    <!-- <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" id="inicio-link"><i class="material-symbols-outlined">home</i> Inicio</a></li>
+        <li><a href="#" id="acerca-de-link"><i class="material-symbols-outlined">info</i> Acerca de</a></li>
+        <li><a href="#" id="contacto-link"><i class="material-symbols-outlined">call</i> Contacto</a></li>        
+        <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-login-mobile">
+                <i class="material-symbols-outlined">lock</i> Iniciar sesión
+                <i class="material-symbols-outlined right">arrow_drop_down</i>
+            </a>
+            <ul id="dropdown-login-mobile" class="dropdown-content">
+                <li><a href="#" id="login-mobile">Ingresar</a></li>
+                <li><a href="#" id="registro-mobile">Registrarse</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </li>
+    </ul> -->
+
+    <!-- HEADER -->
+    <!-- <my-header></my-header> -->
+
+    <!-- Contenido de la página -->
     <div class="container">
-        <h1>Bienvenido a mi sitio web</h1>
-        <p>Esta plantilla utiliza materialize para generar la apariencia del sitio web de manera mas sencilla utilizando .</p>
+        <div dir="titulo-principal">
+            <h1>Bienvenido a mi pagina</h1>
+        </div>
+
+        <p>Esta plantilla utiliza materialize para generar la apariencia del sitio web de manera más sencilla
+            utilizando.</p>
         <p><b>/* Small only */</b><br>
             @media screen and (max-width: 39.9375em) {<br>} <br><br>
-            
+
             <b>/* Medium and up */</b><br>
             @media screen and (min-width: 40em) {<br>}<br><br>
-            
+
             <b>/* Medium only */</b><br>
             @media screen and (min-width: 40em) and (max-width: 63.9375em) {<br>}<br><br>
-            
+
             <b>/* Large and up */</b><br>
             @media screen and (min-width: 64em) {<br>}<br><br>
-            
+
             <b>/* Large only */</b><br>
             @media screen and (min-width: 64em) and (max-width: 74.9375em) {<br>}
         </p>
     </div>
+
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- Mis Script js -->
     <script src="public/js/master.js"></script>
+
+    <!-- Inicialización del componente dropdown -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems, {});
+
+            // Inicialización del componente sidenav para pantallas pequeñas
+            var elemsSidenav = document.querySelectorAll('.sidenav');
+            var instancesSidenav = M.Sidenav.init(elemsSidenav, {});
+        });
+    </script>
 </body>
+
 </html>

@@ -1,7 +1,6 @@
 /* Estilos personalizados para la barra lateral */
-.sidenav-trigger {
-    display: none; /* Ocultar el ícono de menú en pantallas grandes */
-}
+
+
 
 
 /* Small only */
@@ -9,11 +8,92 @@
     .sidenav-trigger {
         display: block; /* Mostrar el ícono de menú en pantallas pequeñas */
     }
+    
+    h1{    
+        font-size: 3em;
+    } 
+
+    nav {
+        color: #fff;
+        /* background-color: #12857b; */
+        background-color: #000000;
+        width: 100%;
+        height: 11em;
+        line-height: 6em;      
+    }
+    
+    nav .brand-logo {     
+      margin: 0 auto;
+
+    }
+    
+    #nav-mobile{
+        margin-top: 1em;
+    }
+    #Buscado-in {
+        width: 60%;
+        margin-left: 1em;
+        margin-top: 5em;
+        color: #fff;
+    }
+    #btn-buscado{
+        margin-top: 1em;
+        width: 12%;
+        height: 4em;
+    }
+    
+    
+    /* Agregar estilos para el menú desplegable */
+    .dropdown-content li {
+        clear: both;
+        color: #333;
+        display: block;
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+    
+    .dropdown-content li:hover {
+        background-color: #12857b;  
+    }
+    
+    
+    .dropdown-content li:hover a {
+        color: #fff;
+    }
+    
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+        border: 1px solid #ccc;
+    }
+    
+    .dropdown-content li a {
+        color: #333;
+    }
+    
+    .material-symbols-outlined {
+        display: contents;
+    }  
+    #promociones{
+        text-align: center;
+    } 
+    #titulo-principal{
+        text-align: center;
+    } 
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-
+    #Buscado-in {
+        width: 56%;
+        margin-left: 3em;
+        margin-top: 2em;
+        color: #fff;
+    }
 }
 
 /* Medium only */
@@ -23,10 +103,80 @@
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+    .sidenav-trigger {
+        display: none; /* Ocultar el ícono de menú en pantallas grandes */
+    }
 
-
+    nav {
+        color: #fff;
+        /* background-color: #12857b; */
+        background-color: #000000;
+        width: 100%;
+        height: 7em;
+        line-height: 6em;
+    }
+    
+    nav .brand-logo {
+      margin-left: 1em !important;
+      margin: 0 auto;
+    }
+    
+    #nav-mobile{
+        margin-top: 1em;
+    }
+    #Buscado-in {
+        width: 22%;
+        margin-left: 25em;
+        color: #fff;
+    }
+    
+    #btn-buscado{
+        margin-top: 1em;
+        width: 2%;
+        height: 4em;
+    }
+    
+    
+    /* Agregar estilos para el menú desplegable */
+    .dropdown-content li {
+        clear: both;
+        color: #333;
+        display: block;
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+    
+    .dropdown-content li:hover {
+        background-color: #12857b;  
+    }
+    
+    
+    .dropdown-content li:hover a {
+        color: #fff;
+    }
+    
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+        border: 1px solid #ccc;
+    }
+    
+    .dropdown-content li a {
+        color: #333;
+    }
+    
+    #promociones{
+        text-align: center;
+    }
+    #titulo-principal{
+        text-align: center;
+    } 
 }
-
+    
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
@@ -34,59 +184,4 @@
 
 /*//////////////////////////REGLAS GENERALES //////////////////////////////////////////////////////*/
 
-nav {
-    color: #fff;
-    background-color: #000000 ;
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-}
 
-nav .brand-logo {
-  margin-left: 1em !important;
-  margin: 0 auto;
-}
-
-#buscador{
-    width: 100%;
-    background-color: #000000;
-}
-
-.buscador{
-    margin-left: 32.25rem !important;
-    margin-right: 12.25rem !important;
-}
-#articulo{
-    
-    color: #fff;
-}
-
-/* Agregar estilos para el menú desplegable */
-.dropdown-content li {
-    clear: both;
-    color: #333;
-    display: block;
-    padding: 10px 20px;
-    white-space: nowrap;
-}
-
-.dropdown-content li:hover {
-    background-color: #f0f0f0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 160px;
-    z-index: 1;
-    border: 1px solid #ccc;
-}
-
-.dropdown-content li a {
-    color: #333;
-}
-
-.dropdown-content li a:hover {
-    color: #333;
-}

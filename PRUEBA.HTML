@@ -1,0 +1,29 @@
+    <ul class="sidenav" id="mobile-demo">       
+            <div class="row bordered">
+              <div class="col s6 m6" style="display: flex; align-items: center;">
+                <a href="#"><img src="img/Logo2.png" class="img-circle profile_img" style="max-width: 74%; height: auto;margin-right: 10px;"></a>
+                <span id="usuario" class="hide-on-med-and-downx" style="color: #000;">USER NAME</span><input type="hidden" id="hUsuario" />
+              </div>
+              <div class="col s6 m6">
+                <div class="close-session">
+                  <a href="#" onclick="logout();" class="green-text">
+                    <span class="material-symbols-outlined green-text right" style="margin-right: 0px;">power_off</span><span class="textclose-sesion">Cerrar sesión</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <li><a href="index.html"><i class="material-symbols-outlined">home</i> Inicio</a></li>
+            <li><a href="#"><i class="material-symbols-outlined">info</i> Acerca de</a></li>
+            <li><a href="#"><i class="material-symbols-outlined">call</i> Contacto</a></li>
+        <li>
+            <a href="#" class="dropdown-trigger" data-target="dropdown-login">
+                <i class="material-symbols-outlined">lock</i> Iniciar sesión
+                <i class="material-symbols-outlined right">arrow_drop_down</i>
+            </a>
+            <ul id="dropdown-login" class="dropdown-content">
+                <li><a href="index.html">Ingresar</a></li>
+                <li><a href="app/views/registro.html">Registrarse</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </li>
+    </ul>
